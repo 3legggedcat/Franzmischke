@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Franz Mischke — Resume and professional portfolio." />
+  <meta name="description" content="Franz Mischke — resume and professional portfolio." />
   <title>Franz Mischke | Resume</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,90 +11,97 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="glow glow-one"></div>
+  <div class="glow glow-two"></div>
+
   <header class="site-header">
     <div class="container nav">
-      <a class="logo" href="#top">FM</a>
+      <a class="brand" href="#top" aria-label="Home">FM</a>
       <nav>
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#education">Education</a>
         <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="resume.pdf" target="_blank">Resume PDF</a>
       </nav>
     </div>
   </header>
 
   <main id="top">
     <section class="hero container">
-      <p class="kicker">Software Engineering · Surgical Technology · Podiatric Medicine</p>
-      <h1>Franz <span>Mischke</span></h1>
-      <p class="intro">
-        Software Engineering graduate and Certified Surgical Technologist combining
-        technical problem-solving with hands-on clinical experience.
+      <div class="eyebrow">PORTFOLIO / RESUME</div>
+      <h1>Franz<br><span>Mischke</span></h1>
+      <p class="hero-copy">
+        Software Engineering graduate and Certified Surgical Technologist
+        combining technical problem-solving with hands-on clinical experience.
       </p>
-      <div class="buttons">
-        <a class="btn primary" href="#experience">View Resume</a>
-        <a class="btn secondary" href="resume.pdf" target="_blank">Open PDF Resume</a>
+      <div class="hero-actions">
+        <a class="button primary" href="#experience">Explore experience</a>
+        <a class="button ghost" href="resume.pdf" target="_blank">Open resume PDF ↗</a>
       </div>
-      <div class="facts">
-        <span>San Diego, California</span>
-        <span>English & German</span>
-        <span>Healthcare + Technology</span>
+
+      <div class="stat-row">
+        <div><strong>2021–Present</strong><span>Surgical experience</span></div>
+        <div><strong>B.S.</strong><span>Software Engineering</span></div>
+        <div><strong>2</strong><span>Fluent languages</span></div>
       </div>
     </section>
 
     <section id="about" class="section container">
-      <p class="section-number">01 / ABOUT</p>
-      <div class="two-col">
-        <h2>Bridging technology and healthcare.</h2>
-        <div>
+      <div class="section-label">01 / ABOUT</div>
+      <div class="split">
+        <h2>Technology.<br>Healthcare.<br>Continuous growth.</h2>
+        <div class="copy">
           <p>
-            I graduated from Northern Arizona University with a Bachelor's Degree in
-            Software Engineering. My background includes software development, research,
-            data interpretation, image analysis, and several years of operating-room experience.
+            I recently graduated from Northern Arizona University with a Bachelor's
+            Degree in Software Engineering. I am pursuing a career in podiatric medicine
+            and focused on continuing to build both clinical and technical expertise.
           </p>
           <p>
-            I am pursuing a career in podiatric medicine and remain committed to continuous
-            learning, professional growth, and expanding my clinical and technical skill set.
+            My background includes software development, research data interpretation,
+            image analysis, operating-room workflow, surgical instrumentation, and
+            direct collaboration with physicians and nurses.
           </p>
         </div>
       </div>
     </section>
 
-    <section id="experience" class="section dark-section">
+    <section id="experience" class="section">
       <div class="container">
-        <p class="section-number light">02 / EXPERIENCE</p>
+        <div class="section-label">02 / EXPERIENCE</div>
 
-        <article class="job">
-          <div class="job-meta">
-            <span>July 2021 — Present</span>
-            <span>San Diego, CA</span>
+        <article class="timeline-card">
+          <div class="timeline-meta">
+            <span class="pill">CLINICAL</span>
+            <p>July 2021 — Present</p>
+            <p>San Diego, California</p>
           </div>
-          <div class="job-main">
+          <div class="timeline-content">
             <h3>Surgical Technician</h3>
-            <p class="company">Mission Valley Heights Surgery Center</p>
+            <h4>Mission Valley Heights Surgery Center</h4>
             <ul>
-              <li>Scrubbed in on Orthopedics, Neurology, Urology, General Surgery, and Pain Management cases.</li>
+              <li>Scrubbed in on Orthopedics, Neurology, Urology, General Surgery, and Pain Management operations.</li>
               <li>Assisted physicians and nurses during surgical procedures.</li>
               <li>Set up and broke down surgical instruments for cases.</li>
-              <li>Prepared case carts for upcoming surgeries.</li>
+              <li>Prepared case carts for future surgeries.</li>
             </ul>
           </div>
         </article>
 
-        <article class="job">
-          <div class="job-meta">
-            <span>Aug. 2025 — May 2026</span>
-            <span>Flagstaff, AZ</span>
+        <article class="timeline-card">
+          <div class="timeline-meta">
+            <span class="pill">TECHNICAL</span>
+            <p>August 2025 — May 2026</p>
+            <p>Flagstaff, Arizona</p>
           </div>
-          <div class="job-main">
+          <div class="timeline-content">
             <h3>NeuroLight Capstone</h3>
-            <p class="company">Northern Arizona University</p>
+            <h4>Northern Arizona University</h4>
             <ul>
               <li>Designed a workbench for the NeuroLight research group.</li>
               <li>Developed a user interface.</li>
               <li>Managed and interpreted neuronal datasets.</li>
-              <li>Performed image analysis on research datasets.</li>
+              <li>Performed image analysis on the dataset.</li>
             </ul>
           </div>
         </article>
@@ -102,53 +109,62 @@
     </section>
 
     <section id="education" class="section container">
-      <p class="section-number">03 / EDUCATION</p>
-      <div class="education-grid">
-        <div class="edu-card">
-          <p class="date">Jan. 2023 — May 2026</p>
+      <div class="section-label">03 / EDUCATION</div>
+      <div class="cards">
+        <article class="card">
+          <span class="card-number">01</span>
+          <p class="date">JAN 2023 — MAY 2026</p>
           <h3>B.S. Software Engineering</h3>
-          <p>Northern Arizona University</p>
-          <span>Flagstaff, Arizona</span>
-        </div>
-        <div class="edu-card">
-          <p class="date">Sept. 2019 — June 2021</p>
+          <p class="muted">Northern Arizona University</p>
+          <p class="small">Flagstaff, Arizona</p>
+        </article>
+
+        <article class="card">
+          <span class="card-number">02</span>
+          <p class="date">SEP 2019 — JUN 2021</p>
           <h3>Surgical Technology Certification</h3>
-          <p>Loma Linda University</p>
-          <span>Loma Linda, California</span>
-        </div>
+          <p class="muted">Loma Linda University</p>
+          <p class="small">Loma Linda, California</p>
+        </article>
       </div>
     </section>
 
-    <section id="skills" class="section soft-section">
+    <section id="skills" class="section alt">
       <div class="container">
-        <p class="section-number">04 / SKILLS & CREDENTIALS</p>
-        <div class="skills-grid">
+        <div class="section-label">04 / SKILLS & CREDENTIALS</div>
+        <div class="skills-layout">
           <div>
+            <h2>Built for both<br>code and clinic.</h2>
+          </div>
+
+          <div class="skill-block">
             <h3>Technical</h3>
             <div class="tags">
               <span>Python</span><span>C</span><span>HTML</span>
               <span>CSS</span><span>JavaScript</span><span>Image Analysis</span>
             </div>
           </div>
-          <div>
-            <h3>Certifications</h3>
-            <p><strong>Certified Surgical Technologist</strong><br>NBSTSA · June 2022 — Present</p>
-            <p><strong>BLS for Healthcare Providers</strong><br>American Heart Association · July 2021 — Present</p>
+
+          <div class="skill-block">
+            <h3>Credentials</h3>
+            <p><strong>Certified Surgical Technologist</strong><br><span>NBSTSA · June 2022 — Present</span></p>
+            <p><strong>BLS for Healthcare Providers</strong><br><span>American Heart Association · July 2021 — Present</span></p>
           </div>
-          <div>
+
+          <div class="skill-block">
             <h3>Languages</h3>
-            <p>English — Fluent</p>
-            <p>German — Fluent</p>
+            <p><strong>English</strong><br><span>Fluent</span></p>
+            <p><strong>German</strong><br><span>Fluent</span></p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section contact container">
-      <p class="section-number">05 / CONTACT</p>
+    <section id="contact" class="contact container">
+      <div class="section-label">05 / CONTACT</div>
       <h2>Let’s connect.</h2>
-      <p>For professional, academic, or technical opportunities:</p>
-      <div class="contact-links">
+      <p>Professional, academic, clinical, or technical opportunities.</p>
+      <div class="contact-actions">
         <a href="mailto:Franzjmischke@gmail.com">Franzjmischke@gmail.com</a>
         <a href="tel:+16192109625">(619) 210-9625</a>
       </div>
@@ -156,7 +172,10 @@
   </main>
 
   <footer>
-    <div class="container">© 2026 Franz Mischke</div>
+    <div class="container footer-inner">
+      <span>© 2026 Franz Mischke</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
   </footer>
 </body>
 </html>
